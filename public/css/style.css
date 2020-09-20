@@ -1,0 +1,13 @@
+table {
+    border: black solid 2px;
+}
+nav {
+    background-color: gray;
+}
+td {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+textarea {
+    resize: none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Bootstrap -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie-edge" />
+
+  <link rel="stylesheet" href="bootstrap/styles/bootstrap.min.css" />
+
+  <!--  -->
+  <title>Notas</title>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <div id="container-fluid">
+    <div class="navbar navbar-expand-sm bg-primary navbar-dark navbar-justified">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contacto</a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Github</a>
+            <a href="#" class="dropdown-item">Instagram</a>
+            <a href="#" class="dropdown-item">Twitter</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br />
+  <!-- Formularios -->
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-6 fixed-left" id="formularios">
+          <!-- Titulo -->
+          <label for="titulo">Título:</label>
+          <textarea name="titulo" cols="30" rows="1" id="tituloForm" class="form-control"></textarea>
+          <!-- Contenido -->
+          <label for="nota">Contenido:</label>
+          <textarea name="nota" cols="30" rows="10" id="notaForm" class="form-control"></textarea>
+          <br />
+          <!-- Botones -->
+          <input class="btn btn-primary" type="button" onclick="crearNota()" value="Nueva nota" id="crearBoton" />
+          <input class="btn btn-primary" type="button" value="Eliminar notas" id="reiniciarBoton" />
+        </div>
+        <!-- Notas -->
+        <div class="col-6" id="notas"></div>
+      </div>
+    </form>
+  </div>
+
+  <!-- AJAX -->
+  <script src="js/ownAjax.js"></script>
+  <!-- JS de Bootstrap -->
+  <script src="bootstrap/scripts/jquery-3.5.1.slim.min.js"></script>
+  <script src="bootstrap/scripts/popper.min.js"></script>
+  <script src="bootstrap/scripts/bootstrap.min.js"></script>
+  <!-- Fin -->
+</body>
+
+</html>
