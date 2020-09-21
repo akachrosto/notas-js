@@ -1,0 +1,33 @@
+body {
+    background-color: whitesmoke;
+}
+.navbar {
+    background-color: #e66767;
+}
+label {
+    color: #303952;
+}
+textarea {
+    resize: none;
+}
+a {
+    color: white;
+}
+a:hover{
+    color: whitesmoke;
+}
+.dropdown-item:hover{
+    color: white;
+    background-color: #e66767;
+}
+.btn {
+    color: #f7f1e3;
+    background-color: #e66767;
+}
+.btn:hover{
+    background-color: #e66767;
+    color: whitesmoke;
+}
+#notas {
+    background-color: black;
+}

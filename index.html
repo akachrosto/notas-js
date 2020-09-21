@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Bootstrap -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie-edge" />
+
+  <link rel="stylesheet" href="bootstrap/styles/bootstrap.min.css" />
+
+  <!--  -->
+  <title>Notas</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body">
+  <!-- Barra de navegacion -->
+  <div id="container-fluid">
+    <div class="navbar navbar-expand-sm fixed-top">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">🏠 Inicio</a></li>
+
+        <div class="justify-content-end">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contacto</a>
+            <div class="dropdown-menu">
+              <a href="https://github.com/akachrosto" class="dropdown-item">Github</a>
+              <a href="https://instagram.com/akachrosto" class="dropdown-item">Instagram</a>
+              <a href="https://twitter.com/akachrosto" class="dropdown-item">Twitter</a>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <br /><br /><br /><br />
+
+  <!-- Formularios -->
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-4 position-fixed" id="formularios">
+          <!-- Titulo -->
+          <label for="titulo" class="font-weight-bold">Título:</label>
+          <textarea name="titulo" cols="30" rows="1" id="tituloForm" class="form-control" data-toggle="tooltip"
+            title="Este campo es opcional."></textarea>
+          <!-- Contenido -->
+          <label for="nota" class="font-weight-bold">Contenido:</label>
+          <textarea name="nota" cols="30" rows="10" id="notaForm" class="form-control"></textarea>
+          <br />
+          <!-- Botones -->
+          <input class="btn" type="button" value="Nueva nota" id="crearBoton" />
+          <input class="btn" type="button" value="Eliminar notas" id="reiniciarBoton" />
+        </div>
+      </div>
+
+    </form>
+    
+    <!-- Notas -->
+    <div class="row justify-content-end">
+      <div class="col-5 float-right clearfix" id="notas"></div>
+    </div>
+
+    <script id="opciones"></script>
+  </div>
+  
+  <!-- JS de Bootstrap -->
+  <script src="bootstrap/scripts//jquery-3.5.1.slim.min.js"></script>
+  <script src="bootstrap/scripts//popper.min.js"></script>
+  <script src="bootstrap/scripts/bootstrap.min.js"></script>
+  <!-- Fin -->
+  <!-- Script sin Ajax -->
+  <script src="js/noAjax/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <!-- AJAX -->
+  <!-- <script src="js/ownAjax.js"></script> -->
+
+  </body>
+
+</html>
