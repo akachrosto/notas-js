@@ -7,21 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie-edge" />
 
-  <link rel="stylesheet" href="bootstrap/styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="./bootstrap/styles/bootstrap.min.css">
 
   <!--  -->
+  <link rel="shortcut icon" href="./icon.webp" type="image/x-icon">
   <title>Notas</title>
   <link rel="stylesheet" href="./css/style.css" />
 
 </head>
 
-<body">
+<body>
   <!-- Barra de navegacion -->
   <div id="container-fluid">
     <nav class="navbar navbar-expand-sm mb-3">
 
       <a href="#" class="navbar-brand disable">🏠 Inicio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle	navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -29,19 +31,19 @@
 
         <ul class="navbar-nav nav-fill">
           <li class="navbar-item">
-            <a href="#" class="nav-link">Dou-Lo Portafolio</a>
+            <a href="https://doulo.now.sh" target="_blank" class="nav-link">Dou-Lo Portafolio</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="nav-link">Github</a>
+            <a href="https://github.com/akachrosto" target="_blank" class="nav-link">Github</a>
           </li>
 
           <li class="navbar-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbardrop">Contacto</a>
 
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Instagram</a>
-              <a href="#" class="dropdown-item">Twitter</a>
+              <a href="https://instagram.com/akachrosto" target="_blank" class="dropdown-item">Instagram</a>
+              <a href="https://twitter.com/akachrosto" target="_blank" class="dropdown-item">Twitter</a>
             </div>
 
           </li>
@@ -50,45 +52,45 @@
 
       </div>
     </nav>
-    
+
   </div>
 
   <!-- Formularios -->
   <div class="container">
     <div class="row clearfix">
 
-        <div class="col-12 col-md-5 d-md-inline" id="formularios">
-          <form>
+      <div class="col-12 col-md-5 d-md-inline" id="formularios">
+        <form>
 
-            <!-- Titulo -->
-            <label for="titulo" class="font-weight-bold">Título:</label>
-            <textarea name="titulo" cols="30" rows="1" id="tituloForm" class="form-control" data-toggle="tooltip"
-              title="Este campo es opcional."></textarea>
-            <!-- Contenido -->
-            <label for="nota" class="font-weight-bold">Contenido:</label>
-            <textarea name="nota" cols="30" rows="10" id="notaForm" class="form-control"></textarea>
-            <br />
-            <!-- Botones -->
-            <input class="btn" type="button" value="Nueva nota" id="crearBoton" />
-            <input class="btn" type="button" value="Eliminar notas" id="reiniciarBoton" />
+          <!-- Titulo -->
+          <label for="titulo" class="font-weight-bold">Título:</label>
+          <textarea name="titulo" cols="30" rows="1" id="tituloForm" class="form-control" data-toggle="tooltip"
+            title="Este campo es opcional."></textarea>
+          <!-- Contenido -->
+          <label for="nota" class="font-weight-bold">Contenido:</label>
+          <textarea name="nota" cols="30" rows="10" id="notaForm" class="form-control"></textarea>
+          <br />
+          <!-- Botones -->
+          <input class="btn" type="button" value="Nueva nota" id="crearBoton" />
+          <input class="btn" type="button" value="Eliminar notas" id="reiniciarBoton" />
 
-          </form>
-          
-        </div>
-      
-      <div class="col-12 border-top my-5 d-md-none linea"></div>
+        </form>
+
+      </div>
+
+      <div class="col-12 border-top my-5 d-md-none"></div>
 
       <div class="col-12 col-md-6 d-md-inline ml-md-5" id="notas"></div>
 
-      </div>
     </div>
+  </div>
 
-      
+
 
   <!-- JS de Bootstrap -->
-  <script src="bootstrap/scripts//jquery-3.5.1.slim.min.js"></script>
-  <script src="bootstrap/scripts//popper.min.js"></script>
-  <script src="bootstrap/scripts/bootstrap.min.js"></script>
+  <script src="./bootstrap/scripts/jquery-3.5.1.slim.min.js"></script>
+  <script src="./bootstrap/scripts/popper.min.js"></script>
+  <script src="./bootstrap/scripts/bootstrap.min.js"></script>
 
   <script>
     $(document).ready(function () {
