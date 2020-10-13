@@ -28,3 +28,51 @@ a:hover{
     background-color: #e66767;
     color: whitesmoke;
 }
+@media only screen and (min-width: 768px){
+    #formularios, #barranav {
+      position:fixed;
+    }
+    #formularios {
+        width: 300px;
+        margin-top: 90px;
+    }
+    #barranav{
+        z-index: 100;
+    }
+    #notas {
+        margin-top: 90px;
+        margin-left: 350px
+    }
+}
+@media only screen and (min-width: 992px){
+    #formularios, #barranav {
+      position:fixed;
+    }
+    #formularios {
+        width: 400px;
+        margin-top: 90px;
+    }
+    #barranav{
+        z-index: 100;
+    }
+    #notas {
+        margin-top: 90px;
+        margin-left: 475px
+    }
+}
+@media only screen and (min-width: 1200px){
+    #formularios, #barranav {
+      position:fixed;
+    }
+    #formularios {
+        width: 475px;
+        margin-top: 90px;
+    }
+    #barranav{
+        z-index: 100;
+    }
+    #notas {
+        margin-top: 90px;
+        margin-left: 550px;
+    }
+}
